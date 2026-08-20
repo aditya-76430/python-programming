@@ -15,4 +15,4 @@ print(add_numbers(1, 2, 3, 4))
 def user_detals(**info):
     print(info)
     
-user_detals(name = "aditya", adge = 22)
+user_detals(name = "aditya", age = 22)
