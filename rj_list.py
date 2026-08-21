@@ -3397,3 +3397,6 @@ rj_txt_no_pmark = rj_txt_no_pmark.replace("!", " ")
 rj_list = rj_txt_no_pmark.split()
 
 print(rj_list)
+
+lst_length = len(rj_list)
+print(lst_length)
