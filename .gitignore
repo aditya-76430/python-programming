@@ -5,3 +5,4 @@ __pycache__/
 .vscode/
 .environment.yml
 .settings.json
+read.txt

@@ -19,3 +19,10 @@ menu["burger"] = menu["burger"] * 2
 menu.pop("non-veg")
 
 print(menu)
+
+# To print key and value all together.
+# K is stand for "Key"
+# v is stanf for "values"
+
+for k, v in menu.items():
+    print(k, v)
