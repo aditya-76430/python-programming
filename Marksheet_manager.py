@@ -1,5 +1,7 @@
 # Some Example that how the student data will handel by python.
+students = {}
 
+# How the data will store in python Dict.
 students = {
     "01":{
         "name":"aditya",
@@ -42,3 +44,28 @@ def menu():
     
 # creating a add_student dunction where user can add the student data
 
+def add_student():
+    Student_id = input("Enter Student ID: ")
+    student_name = input("Enter Student Name: ")
+    
+    # marks of the student
+    
+    english_marks = int(input("Enter Eng marks: "))
+    hindi_marks = int(input("Enter Hindi marks: "))
+    maths_marks = int(input("Enter Maths marks: "))
+    science_marks = int(input("Enter Science marks:"))
+    
+    # Now we will store this data into the students dictionary
+    
+    students[Student_id] = {
+        "name": student_name,
+        "marks":{
+            "English":english_marks,
+            "Hindi":hindi_marks,
+            "Maths":maths_marks,
+            "Science":science_marks
+        }
+    }
+    
+#print(add_student())
+print(students)
