@@ -24,7 +24,7 @@ students = {
     
 }
 
-# Options / student_menu
+# Options / student_menu .
 
 def menu():
     print("\n======== STUDENT MANAGEMENT SYSTEM ========")
