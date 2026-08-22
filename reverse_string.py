@@ -4,4 +4,4 @@ def reverse(s):
     else:
         return reverse(s[1:]) + s[0]
     
-print(reverse('aditya'))
+print(reverse('aditya')) 
