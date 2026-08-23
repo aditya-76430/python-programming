@@ -62,7 +62,7 @@ def add_student():
             "Science":science_marks
         }
     }
-
+    
 # Now we will search student with student ID
     
 def search_student():
@@ -101,4 +101,18 @@ def calculate_total_marks():
         print("Toatal Marks of the Studen is: ", total)
     else:
         print("In valid Id or student not found in record!") 
+# to calculate the total percentage of the marks
         
+def calculate_percentage():
+    Students_id = input("Enter student ID: ")
+    
+    # we will link the id to calculate the total marks
+    
+    if Students_id in students:
+        total = sum(students[Students_id]["marks"].values())
+        percentage = (total / 400)*100
+        print("Toatal percentage of the Student is: ", percentage)
+    else:
+        print("In valid Id or student not found in record!")     
+     
+
