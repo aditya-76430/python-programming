@@ -77,3 +77,18 @@ def search_student():
 
 #search_student()
 
+# Now we will delete the student id from students_id
+def delete_student():
+    delete_students = input("Enter Student ID_Del: ")
+    
+    # we will check the student in dict and if found it will delete
+    
+    if delete_students in students:
+        students.pop(delete_students)
+        print("Student deleted sucessfully!")
+    else:
+        print("Student not found!")       
+
+#delete_student()
+#print(students)
+
