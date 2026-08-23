@@ -2,28 +2,24 @@
 students = {}
 
 # How the data will store in python Dict.
-students = {
-    "01":{
-        "name":"aditya",
-        "marks":{
-            "English":85,
-            "Hindi":95,
-            "Maths":56,
-            "Science":78
-        }
-    },
-    
-    "02":{
-        "name":"Rohan",
-        "marks":{
-            "English":45,
-            "Hindi":45,
-            "Maths":85,
-            "Science":78
-        }
+students["01"] = {
+    "name": "aditya",
+    "marks": {
+        "English": 85,
+        "Hindi": 95,
+        "Maths": 56,
+        "Science": 78
     }
-    
-    
+}
+
+students["02"] = {
+    "name": "Rohan",
+    "marks": {
+        "English": 78,
+        "Hindi": 89,
+        "Maths": 82,
+        "Science": 12
+    }
 }
 
 # Options / student_menu .
@@ -66,6 +62,18 @@ def add_student():
             "Science":science_marks
         }
     }
+
+# Now we will search student with student ID
     
-#print(add_student())
-print(students)
+def search_student():
+    student_id = input("Enter Student ID: ")
+    
+ # Now ID will get searched and display
+ 
+    if student_id in students:
+        print(students[student_id])
+    else:
+        print("Student record not found !")
+
+#search_student()
+
