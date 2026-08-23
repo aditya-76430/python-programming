@@ -89,6 +89,16 @@ def delete_student():
     else:
         print("Student not found!")       
 
-#delete_student()
-#print(students)
+# to claculate the total marks of the students
 
+def calculate_total_marks():
+    Students_id = input("Enter student ID: ")
+    
+    # we will link the id to calculate the total marks
+    
+    if Students_id in students:
+        total = sum(students[Students_id]["marks"].values())
+        print("Toatal Marks of the Studen is: ", total)
+    else:
+        print("In valid Id or student not found in record!") 
+        
