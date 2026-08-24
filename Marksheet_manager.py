@@ -103,11 +103,39 @@ def menu():
     print("\n======== STUDENT MANAGEMENT SYSTEM ========")
     print("1. Add Student")
     print("2. Search Student")
-    print("3. View Student")
-    print("4. Update Student")
-    print("5. Calculate Toatal Marks")
+    print("3. Delete Student")
+    print("4. Calculate Total Marks")
+    print("5. Calculate Percentage")
     print("6. Calculate Total Percentage")
-    print("7. Calcualte Grade")
-    print("8. Result (pass/Fall)")
-    print("9. Load Data")
-    print("10. Save Data")
+    
+    
+
+while True:
+    
+    menu()
+    
+    choice = int(input("Enter Your Choice: "))
+    
+    if choice == 1:
+        print("You have choice: ", choice)
+        add_student()
+        
+    elif choice == 2:
+        print("You have Choice: ", choice)
+        search_student()
+    
+    elif choice == 3:
+        print("You have Choice: ", choice)
+        delete_student()
+        
+    elif choice == 4:
+        print("You have choice: ", choice)
+        calculate_total_marks()
+        
+    elif choice == 5:
+        print("You have choice: ", choice)
+        calculate_percentage()
+    
+    else:
+        print("Your Have Enter Invalid Choice!")
+    
